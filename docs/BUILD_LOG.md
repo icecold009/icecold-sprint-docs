@@ -68,6 +68,12 @@ This is an evidence timeline. Entries describe what was observed or decided, not
 - Builder still reports `GitHub isn't connected` when Sync/Publish is attempted.
 - Decision: keep sync, publish, and public QA open until the Builder OAuth callback completes.
 
+## 2026-08-09 - Deterministic fallback quiz checkpoint
+
+- Source commit `00f9340` replaces `Math.random()` quiz ordering with topic-seeded deterministic ordering for questions and answer options.
+- Local `npm.cmd run check` passed: TypeScript validation and Vite production build completed successfully.
+- This keeps the demo fallback reproducible without depending on Builder authentication or an external model.
+
 ## Evidence still required
 
 - [ ] Screenshot of the native.builder project workspace.

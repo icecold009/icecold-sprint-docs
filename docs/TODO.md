@@ -7,7 +7,7 @@ This is the execution checklist for completing IceCold Sprint in the native.buil
 
 ## Local source checkpoint - 2026-08-09
 
-- [x] Implementation branch `codex/icecold-sprint-core-workflow` is pushed at commit `b7faf27`.
+- [x] Implementation branch `codex/icecold-sprint-core-workflow` is pushed at commit `00f9340`.
 - [x] `npm.cmd run check` passes in the application source repository.
 - [x] Core setup, plan generation, quiz, score/recommendation, progress, persistence, and reset code exists locally.
 - [x] Stale quiz state is cleared when starting or regenerating a sprint.

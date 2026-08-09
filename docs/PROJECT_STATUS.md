@@ -8,7 +8,7 @@ Last verified: **2026-08-09**
 | --- | --- | --- |
 | Public URL | Working | `https://icecold-sprint.nativelyai.app` loads without login |
 | Navigation | Working | Dashboard, Subjects, Schedule, Quiz, and Progress routes load |
-| Local source workflow | Implemented | `lablab-hackathon-study-app` commit `b7faf27` on `codex/icecold-sprint-core-workflow`; `npm.cmd run check` passes |
+| Local source workflow | Implemented | `lablab-hackathon-study-app` commit `00f9340` on `codex/icecold-sprint-core-workflow`; `npm.cmd run check` passes |
 | Native.builder workspace | Preview handoff verified; publish blocked | Builder preview reaches the five-question quiz without reload; publish reports GitHub is not connected |
 | Subjects workflow | Missing | Page contains only placeholder copy |
 | Schedule workflow | Missing | Page contains only placeholder copy |
