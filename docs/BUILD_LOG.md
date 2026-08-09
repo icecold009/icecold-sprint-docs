@@ -61,6 +61,13 @@ This is an evidence timeline. Entries describe what was observed or decided, not
 - Builder's GitHub Connect flow therefore cannot complete in this session, and Builder publish remains blocked.
 - Required next action: sign in to the GitHub account that owns or can access `icecold009/lablab-hackathon-study-app`, then retry Builder Integrations → GitHub → Connect.
 
+## 2026-08-09 - GitHub signed in; Builder OAuth callback incomplete
+
+- GitHub sign-in is now confirmed in the browser: the GitHub dashboard shows the authenticated account.
+- Retried Builder Integrations → GitHub → Connect. Builder displayed `Redirecting to GitHub...` but did not complete the connection or expose a repository-selection step.
+- Builder still reports `GitHub isn't connected` when Sync/Publish is attempted.
+- Decision: keep sync, publish, and public QA open until the Builder OAuth callback completes.
+
 ## Evidence still required
 
 - [ ] Screenshot of the native.builder project workspace.

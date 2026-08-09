@@ -15,7 +15,8 @@ This is the execution checklist for completing IceCold Sprint in the native.buil
 - [x] Authenticated Builder preview reaches the five-question quiz without reload and advanced through all five questions.
 - [ ] Native.builder has not been confirmed to contain commit `b7faf27`; its internal one-file repair is not GitHub-synced.
 - [ ] Builder publish is blocked until the GitHub integration is connected.
-- [ ] Sign in to GitHub in the browser session, then retry Builder Integrations → GitHub → Connect.
+- [x] Sign in to GitHub in the browser session.
+- [ ] Complete Builder Integrations → GitHub → Connect after the OAuth callback returns.
 - [ ] The public URL has not received this checkpoint and remains a placeholder shell.
 - [ ] A fresh-browser local workflow could not be run because the in-app browser could not reach the local Vite server.
 
