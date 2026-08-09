@@ -55,6 +55,12 @@ This is an evidence timeline. Entries describe what was observed or decided, not
 - The Builder GitHub Connect action redirected but did not complete an authorization in the available browser session. No public deployment change was confirmed.
 - Decision: the functional preview gate is materially improved, but keep public readiness and submission gates open until GitHub connection, publish, and fresh-browser public QA succeed.
 
+## 2026-08-09 - GitHub account access confirmed as publish prerequisite
+
+- Opened `https://github.com` in the available browser session; GitHub displayed a `Sign in` link and the session was logged out.
+- Builder's GitHub Connect flow therefore cannot complete in this session, and Builder publish remains blocked.
+- Required next action: sign in to the GitHub account that owns or can access `icecold009/lablab-hackathon-study-app`, then retry Builder Integrations → GitHub → Connect.
+
 ## Evidence still required
 
 - [ ] Screenshot of the native.builder project workspace.

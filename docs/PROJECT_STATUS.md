@@ -30,6 +30,7 @@ Last verified: **2026-08-09**
 
 - The authenticated hosted preview now reaches the quiz without reload and advanced through all five questions; the public deployment gate remains open because Builder GitHub connection and publish are incomplete.
 - Builder-to-GitHub synchronization of source commit `b7faf27` is not confirmed.
+- GitHub browser session is logged out; Builder cannot connect or publish until GitHub authentication is completed.
 - Local browser verification was unavailable because the in-app browser could not reach the local Vite server.
 
 ## Completion definition
