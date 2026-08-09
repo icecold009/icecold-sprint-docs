@@ -74,6 +74,14 @@ This is an evidence timeline. Entries describe what was observed or decided, not
 - Local `npm.cmd run check` passed: TypeScript validation and Vite production build completed successfully.
 - This keeps the demo fallback reproducible without depending on Builder authentication or an external model.
 
+## 2026-08-09 - P0 publish and smoke-gate result
+
+- Builder's publish dialog completed successfully and reported the app URL `https://icecold-sprint.nativelyai.app` as published.
+- Fresh and cache-busted checks of that URL still returned the old `Study Sprint` Dashboard/Subjects/Schedule/Quiz/Progress shell, not the IceCold Sprint workflow.
+- A repeatable `npm.cmd run smoke` check was added in source commit `a23b4fa`; TypeScript/build validation passed and the script syntax-checks.
+- Running the smoke check was blocked before URL execution because the local Playwright Chromium binary was missing; the browser download attempt timed out.
+- Decision: P0 public workflow is not complete. Keep the publish-to-public mismatch and browser dependency visible until the named URL serves the functional app and the smoke check passes.
+
 ## Evidence still required
 
 - [ ] Screenshot of the native.builder project workspace.

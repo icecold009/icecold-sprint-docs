@@ -8,8 +8,8 @@ Last verified: **2026-08-09**
 | --- | --- | --- |
 | Public URL | Working | `https://icecold-sprint.nativelyai.app` loads without login |
 | Navigation | Working | Dashboard, Subjects, Schedule, Quiz, and Progress routes load |
-| Local source workflow | Implemented | `lablab-hackathon-study-app` commit `00f9340` on `codex/icecold-sprint-core-workflow`; `npm.cmd run check` passes |
-| Native.builder workspace | Preview handoff verified; publish blocked | Builder preview reaches the five-question quiz without reload; publish reports GitHub is not connected |
+| Local source workflow | Implemented | `lablab-hackathon-study-app` commit `a23b4fa` on `codex/icecold-sprint-core-workflow`; `npm.cmd run check` passes |
+| Native.builder workspace | Preview verified; publish/public mismatch | Builder preview reaches the five-question quiz without reload; Builder reports publish success, but the named public URL still serves the old shell |
 | Subjects workflow | Missing | Page contains only placeholder copy |
 | Schedule workflow | Missing | Page contains only placeholder copy |
 | Quiz workflow | Missing | Page contains only placeholder copy |
@@ -28,8 +28,10 @@ Last verified: **2026-08-09**
 
 ## Latest verification note
 
-- The authenticated hosted preview now reaches the quiz without reload and advanced through all five questions; the public deployment gate remains open because Builder GitHub connection and publish are incomplete.
+- The authenticated hosted preview now reaches the quiz without reload and advanced through all five questions; the public deployment gate remains open because the named URL still serves the old shell.
 - Builder-to-GitHub synchronization of source commit `b7faf27` is not confirmed.
+- Builder later reported a successful publish, but fresh public checks still showed the old shell; public workflow remains unverified.
+- The source `npm.cmd run smoke` harness is present, but its Chromium dependency could not be installed within the environment timeout.
 - GitHub browser session is authenticated, but Builder's GitHub OAuth callback is still incomplete; Builder cannot connect or publish yet.
 - Local browser verification was unavailable because the in-app browser could not reach the local Vite server.
 

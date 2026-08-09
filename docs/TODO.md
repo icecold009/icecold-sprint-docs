@@ -7,12 +7,16 @@ This is the execution checklist for completing IceCold Sprint in the native.buil
 
 ## Local source checkpoint - 2026-08-09
 
-- [x] Implementation branch `codex/icecold-sprint-core-workflow` is pushed at commit `00f9340`.
+- [x] Implementation branch `codex/icecold-sprint-core-workflow` is pushed at commit `a23b4fa`.
 - [x] `npm.cmd run check` passes in the application source repository.
 - [x] Core setup, plan generation, quiz, score/recommendation, progress, persistence, and reset code exists locally.
 - [x] Stale quiz state is cleared when starting or regenerating a sprint.
 - [x] Authenticated native.builder workspace and preview were inspected.
 - [x] Authenticated Builder preview reaches the five-question quiz without reload and advanced through all five questions.
+- [x] Builder publish control reported a successful publish.
+- [ ] The named public URL still serves the old shell after Builder reported publish success.
+- [x] A repeatable `npm.cmd run smoke` P0 check exists in the source repo.
+- [ ] Run the smoke check after the Chromium dependency is available and the public URL serves the functional workflow.
 - [ ] Native.builder has not been confirmed to contain commit `b7faf27`; its internal one-file repair is not GitHub-synced.
 - [ ] Builder publish is blocked until the GitHub integration is connected.
 - [x] Sign in to GitHub in the browser session.
