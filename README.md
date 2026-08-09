@@ -4,6 +4,8 @@ IceCold Sprint is an AI-assisted study sprint planner for students preparing for
 
 ## Current status
 
+The application source now has a validated core workflow on its feature branch, but the public deployment remains the earlier navigation shell until native.builder sync and publishing are completed.
+
 **Early public prototype — incomplete as of 2026-08-08.** The public deployment loads without authentication and has working navigation, but the core study workflow is not implemented yet.
 
 - Public app: <https://icecold-sprint.nativelyai.app>
@@ -31,6 +33,7 @@ This repository documents the product decisions, prompt history, evidence, incom
 - [Architecture and product decisions](docs/DECISIONS.md)
 - [Prompt log](docs/PROMPT_LOG.md)
 - [Roadmap and completion gates](docs/ROADMAP.md)
+- [Detailed execution TODO](docs/TODO.md)
 - [Hackathon submission draft](docs/HACKATHON_SUBMISSION.md)
 - [Demo script](docs/DEMO_SCRIPT.md)
 - [Evidence guide](docs/evidence/README.md)

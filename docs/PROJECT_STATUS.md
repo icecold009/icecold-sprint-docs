@@ -1,6 +1,6 @@
 # Project status
 
-Last verified: **2026-08-08**
+Last verified: **2026-08-09**
 
 ## Verified now
 
@@ -8,12 +8,14 @@ Last verified: **2026-08-08**
 | --- | --- | --- |
 | Public URL | Working | `https://icecold-sprint.nativelyai.app` loads without login |
 | Navigation | Working | Dashboard, Subjects, Schedule, Quiz, and Progress routes load |
+| Local source workflow | Implemented | `lablab-hackathon-study-app` commit `34f07ac`; `npm.cmd run check` passes |
+| Native.builder sync | Blocked | Project URL redirects to the public builder homepage without an authenticated session |
 | Subjects workflow | Missing | Page contains only placeholder copy |
 | Schedule workflow | Missing | Page contains only placeholder copy |
 | Quiz workflow | Missing | Page contains only placeholder copy |
 | Progress workflow | Missing | Page contains only placeholder copy |
 | AI integration | Not verified | No runtime AI workflow visible in the public app |
-| Persistence | Not verified | No user workflow exists to test localStorage |
+| Persistence | Locally implemented; public unverified | Source uses localStorage, but the public deployment is still the shell |
 | Final demo readiness | Not ready | Judges cannot complete an end-to-end workflow |
 
 ## Current product risks
@@ -22,6 +24,7 @@ Last verified: **2026-08-08**
 - The public app currently presents an empty shell rather than a functional product.
 - The hackathon demo cannot yet show problem → plan → quiz → recommendation.
 - Fireworks integration and secure secret configuration have not been verified.
+- Local browser verification was unavailable because the in-app browser could not reach the local Vite server.
 
 ## Completion definition
 

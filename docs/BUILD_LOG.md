@@ -25,6 +25,16 @@ This is an evidence timeline. Entries describe what was observed or decided, not
 - Fireworks is the planned provider for quiz generation because credits are available.
 - A deterministic fallback quiz is required before final submission.
 
+## 2026-08-09 - Local source checkpoint and public deployment recheck
+
+- Implementation source: `icecold009/lablab-hackathon-study-app`, branch `codex/icecold-sprint-core-workflow`, commit `34f07ac`.
+- The local source now contains the setup -> deterministic plan -> five-question quiz -> score/recommendation -> progress/reset workflow.
+- `npm.cmd run check` passed locally: TypeScript validation and the Vite production build completed successfully.
+- The native.builder project URL redirected to the public builder homepage in the available browser session; no authenticated sync or publish action was performed.
+- The public URL was rechecked without authentication. It still shows title `Study Sprint`, Dashboard/Subjects/Schedule/Quiz/Progress navigation, and placeholder onboarding copy; the source workflow is not deployed there yet.
+- Local browser verification could not be completed because the in-app browser could not reach the local Vite server, so local browser behavior remains unverified in this environment.
+- Decision: keep public-readiness and native.builder evidence gates open until authenticated sync, publish, and a fresh-browser public workflow test succeed.
+
 ## Evidence still required
 
 - [ ] Screenshot of the native.builder project workspace.

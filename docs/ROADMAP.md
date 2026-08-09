@@ -1,5 +1,15 @@
 # Roadmap and completion gates
 
+## Local source checkpoint - 2026-08-09
+
+- [x] Core setup, planning, quiz, score, recommendation, progress, and reset flow exists in the implementation repository.
+- [x] Local TypeScript validation and production build pass through `npm.cmd run check`.
+- [x] Stale quiz results are cleared when starting or regenerating a sprint.
+
+The following gates remain public-deployment gates. Do not treat local source completion as submission readiness until the same behavior is visible at the published URL.
+
+For the detailed execution checklist, dependencies, QA matrix, and submission evidence requirements, see [TODO.md](TODO.md).
+
 ## Now — Core workflow
 
 - [ ] Replace empty Subjects page with sample and custom topic setup.
