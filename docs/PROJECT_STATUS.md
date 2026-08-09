@@ -8,7 +8,7 @@ Last verified: **2026-08-09**
 | --- | --- | --- |
 | Public URL | Working | `https://icecold-sprint.nativelyai.app` loads without login |
 | Navigation | Working | Dashboard, Subjects, Schedule, Quiz, and Progress routes load |
-| Local source workflow | Implemented | `lablab-hackathon-study-app` commit `6ae687b` on `codex/icecold-sprint-core-workflow`; `npm.cmd run check` and smoke-script syntax check pass |
+| Local source workflow | Implemented and smoke-verified | `lablab-hackathon-study-app` latest feature checkpoint; `npm.cmd run check` and Edge smoke pass locally |
 | Native.builder workspace | Preview verified; publish/public mismatch | Builder preview reaches the five-question quiz without reload; Builder reports publish success, but the named public URL still serves the old shell |
 | Subjects workflow | Missing | Page contains only placeholder copy |
 | Schedule workflow | Missing | Page contains only placeholder copy |
@@ -32,6 +32,7 @@ Last verified: **2026-08-09**
 - Builder-to-GitHub synchronization of source commit `b7faf27` is not confirmed.
 - Builder later reported a successful publish, but fresh public checks still showed the old shell; public workflow remains unverified.
 - The source `npm.cmd run smoke` harness is present, but its Chromium dependency could not be installed within the environment timeout.
+- The harness now runs with installed Edge: local source passes; the public URL fails at the setup heading because it serves the old shell.
 - GitHub browser session is authenticated, but Builder's GitHub OAuth callback is still incomplete; Builder cannot connect or publish yet.
 - Local browser verification was unavailable because the in-app browser could not reach the local Vite server.
 

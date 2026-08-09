@@ -89,6 +89,14 @@ This is an evidence timeline. Entries describe what was observed or decided, not
 - `npm.cmd run check` and `node --check scripts/smoke.mjs` pass.
 - Runtime execution remains open only because the Chromium binary is unavailable and the named public URL still serves the old shell.
 
+## 2026-08-09 - Local P0 smoke pass and public P0 failure
+
+- Ran `npm.cmd run smoke` with installed Microsoft Edge against `http://127.0.0.1:4173`.
+- Local smoke passed the complete source workflow: Biology sample, plan time budget, five-question quiz, score/feedback, progress refresh, and Reset Sprint cleanup.
+- Ran the same smoke command against `https://icecold-sprint.nativelyai.app`.
+- Public smoke failed at the first assertion because the target returned `Study Sprint` Dashboard/Subjects/Schedule/Quiz/Progress shell instead of `Setup Your Sprint`.
+- Decision: all source-side P0 behavior is verified locally; public P0 remains open solely because the named deployment is serving different code.
+
 ## Evidence still required
 
 - [ ] Screenshot of the native.builder project workspace.
