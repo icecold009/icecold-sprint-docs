@@ -35,6 +35,17 @@ This is an evidence timeline. Entries describe what was observed or decided, not
 - Local browser verification could not be completed because the in-app browser could not reach the local Vite server, so local browser behavior remains unverified in this environment.
 - Decision: keep public-readiness and native.builder evidence gates open until authenticated sync, publish, and a fresh-browser public workflow test succeed.
 
+## 2026-08-09 - Authenticated Builder preview and handoff race
+
+- Authenticated the native.builder project workspace and opened its IceCold Sprint preview.
+- The preview showed the working setup and generated Biology plan, including priority reasons, five blocks, and `Start Quiz` actions.
+- End-to-end preview testing found a real defect: clicking `Start Quiz — Cell Biology` navigated to `/quiz` but showed no question controls until a manual reload.
+- The source repository fix now preserves the quiz handoff marker while setup hydrates and falls back to persisted setup data. Source commit `583ac10` is pushed on `codex/icecold-sprint-core-workflow`.
+- Local `npm.cmd run check` passed after the fix: TypeScript validation and Vite production build completed successfully.
+- The Builder workspace accepted a related one-file repair and reported successful typecheck/build, but its rebuilt hosted preview still showed the blank quiz state during independent verification. Builder-to-GitHub sync of `583ac10` is therefore not confirmed.
+- No publish action was taken. The public URL remains the previously observed placeholder shell.
+- Decision: keep public deployment and final submission gates open; do not record Builder preview success as public readiness.
+
 ## Evidence still required
 
 - [ ] Screenshot of the native.builder project workspace.

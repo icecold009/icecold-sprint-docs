@@ -8,8 +8,8 @@ Last verified: **2026-08-09**
 | --- | --- | --- |
 | Public URL | Working | `https://icecold-sprint.nativelyai.app` loads without login |
 | Navigation | Working | Dashboard, Subjects, Schedule, Quiz, and Progress routes load |
-| Local source workflow | Implemented | `lablab-hackathon-study-app` commit `34f07ac`; `npm.cmd run check` passes |
-| Native.builder sync | Blocked | Project URL redirects to the public builder homepage without an authenticated session |
+| Local source workflow | Implemented | `lablab-hackathon-study-app` commit `583ac10` on `codex/icecold-sprint-core-workflow`; `npm.cmd run check` passes |
+| Native.builder workspace | Authenticated preview inspected; sync unconfirmed | Builder project and preview are accessible, but the rebuilt preview still reproduced the blank plan-to-quiz handoff |
 | Subjects workflow | Missing | Page contains only placeholder copy |
 | Schedule workflow | Missing | Page contains only placeholder copy |
 | Quiz workflow | Missing | Page contains only placeholder copy |
@@ -24,6 +24,11 @@ Last verified: **2026-08-09**
 - The public app currently presents an empty shell rather than a functional product.
 - The hackathon demo cannot yet show problem → plan → quiz → recommendation.
 - Fireworks integration and secure secret configuration have not been verified.
+- Local browser verification was unavailable because the in-app browser could not reach the local Vite server.
+
+## Latest verification note
+
+- The authenticated hosted preview still showed a blank quiz after the plan handoff, so the hosted/public end-to-end gate remains open.
 - Local browser verification was unavailable because the in-app browser could not reach the local Vite server.
 
 ## Completion definition
