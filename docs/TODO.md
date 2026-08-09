@@ -7,12 +7,14 @@ This is the execution checklist for completing IceCold Sprint in the native.buil
 
 ## Local source checkpoint - 2026-08-09
 
-- [x] Implementation branch `codex/icecold-sprint-core-workflow` is pushed at commit `583ac10`.
+- [x] Implementation branch `codex/icecold-sprint-core-workflow` is pushed at commit `b7faf27`.
 - [x] `npm.cmd run check` passes in the application source repository.
 - [x] Core setup, plan generation, quiz, score/recommendation, progress, persistence, and reset code exists locally.
 - [x] Stale quiz state is cleared when starting or regenerating a sprint.
 - [x] Authenticated native.builder workspace and preview were inspected.
-- [ ] Native.builder has not been confirmed to contain commit `583ac10`; its rebuilt preview still reproduced the blank plan-to-quiz handoff.
+- [x] Authenticated Builder preview reaches the five-question quiz without reload and advanced through all five questions.
+- [ ] Native.builder has not been confirmed to contain commit `b7faf27`; its internal one-file repair is not GitHub-synced.
+- [ ] Builder publish is blocked until the GitHub integration is connected.
 - [ ] The public URL has not received this checkpoint and remains a placeholder shell.
 - [ ] A fresh-browser local workflow could not be run because the in-app browser could not reach the local Vite server.
 

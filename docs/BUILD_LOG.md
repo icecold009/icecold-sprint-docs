@@ -46,6 +46,15 @@ This is an evidence timeline. Entries describe what was observed or decided, not
 - No publish action was taken. The public URL remains the previously observed placeholder shell.
 - Decision: keep public deployment and final submission gates open; do not record Builder preview success as public readiness.
 
+## 2026-08-09 - Builder handoff fix verified; publish blocked by GitHub integration
+
+- Builder identified the remaining race as React StrictMode effect replay removing `icecold-quiz-topic` before the auto-start pass completed.
+- The Builder preview was rebuilt with a one-file TopicQuiz repair. Independent preview verification now reaches the first question without reload and advanced through all five questions; the final state showed `5/5 answered`, `Correct: 5`, and `Finish Quiz`.
+- The source repository was aligned with the same StrictMode-safe behavior and pushed at commit `b7faf27`; `npm.cmd run check` passed again.
+- Attempting Builder publish produced the explicit blocker: `GitHub isn't connected. Connect it in Integrations to sync your project.`
+- The Builder GitHub Connect action redirected but did not complete an authorization in the available browser session. No public deployment change was confirmed.
+- Decision: the functional preview gate is materially improved, but keep public readiness and submission gates open until GitHub connection, publish, and fresh-browser public QA succeed.
+
 ## Evidence still required
 
 - [ ] Screenshot of the native.builder project workspace.

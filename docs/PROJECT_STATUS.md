@@ -8,8 +8,8 @@ Last verified: **2026-08-09**
 | --- | --- | --- |
 | Public URL | Working | `https://icecold-sprint.nativelyai.app` loads without login |
 | Navigation | Working | Dashboard, Subjects, Schedule, Quiz, and Progress routes load |
-| Local source workflow | Implemented | `lablab-hackathon-study-app` commit `583ac10` on `codex/icecold-sprint-core-workflow`; `npm.cmd run check` passes |
-| Native.builder workspace | Authenticated preview inspected; sync unconfirmed | Builder project and preview are accessible, but the rebuilt preview still reproduced the blank plan-to-quiz handoff |
+| Local source workflow | Implemented | `lablab-hackathon-study-app` commit `b7faf27` on `codex/icecold-sprint-core-workflow`; `npm.cmd run check` passes |
+| Native.builder workspace | Preview handoff verified; publish blocked | Builder preview reaches the five-question quiz without reload; publish reports GitHub is not connected |
 | Subjects workflow | Missing | Page contains only placeholder copy |
 | Schedule workflow | Missing | Page contains only placeholder copy |
 | Quiz workflow | Missing | Page contains only placeholder copy |
@@ -28,7 +28,8 @@ Last verified: **2026-08-09**
 
 ## Latest verification note
 
-- The authenticated hosted preview still showed a blank quiz after the plan handoff, so the hosted/public end-to-end gate remains open.
+- The authenticated hosted preview now reaches the quiz without reload and advanced through all five questions; the public deployment gate remains open because Builder GitHub connection and publish are incomplete.
+- Builder-to-GitHub synchronization of source commit `b7faf27` is not confirmed.
 - Local browser verification was unavailable because the in-app browser could not reach the local Vite server.
 
 ## Completion definition
