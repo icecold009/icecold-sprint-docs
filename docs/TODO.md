@@ -1,7 +1,7 @@
 # IceCold Sprint execution TODO
 
 Last reviewed: **2026-08-09**
-Current release state: **functional local source; hosted preview handoff blocker; public navigation shell; not submission-ready**
+Current release state: **functional local source and Builder preview; published URL still serves the old shell; not submission-ready**
 
 This is the execution checklist for completing IceCold Sprint in the native.builder project. The application source is generated and deployed through native.builder; this repository records the plan, decisions, verification results, and submission evidence.
 
@@ -17,8 +17,8 @@ This is the execution checklist for completing IceCold Sprint in the native.buil
 - [ ] The named public URL still serves the old shell after Builder reported publish success.
 - [x] A repeatable `npm.cmd run smoke` P0 check exists in the source repo.
 - [ ] Run the smoke check after the Chromium dependency is available and the public URL serves the functional workflow.
-- [ ] Native.builder has not been confirmed to contain commit `b7faf27`; its internal one-file repair is not GitHub-synced.
-- [ ] Builder publish is blocked until the GitHub integration is connected.
+- [ ] Native.builder has not been confirmed to contain commit `a23b4fa`; its internal one-file repair is not GitHub-synced.
+- [ ] Builder GitHub sync remains unconfirmed; Builder publish was triggered successfully without it.
 - [x] Sign in to GitHub in the browser session.
 - [ ] Complete Builder Integrations → GitHub → Connect after the OAuth callback returns.
 - [ ] The public URL has not received this checkpoint and remains a placeholder shell.
