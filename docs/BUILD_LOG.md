@@ -82,6 +82,13 @@ This is an evidence timeline. Entries describe what was observed or decided, not
 - Running the smoke check was blocked before URL execution because the local Playwright Chromium binary was missing; the browser download attempt timed out.
 - Decision: P0 public workflow is not complete. Keep the publish-to-public mismatch and browser dependency visible until the named URL serves the functional app and the smoke check passes.
 
+## 2026-08-09 - P0 source acceptance coverage complete
+
+- Source commit `6ae687b` extends the repeatable smoke check to cover the full Biology path, time-budget visibility, five-question score/feedback, progress after refresh, and Reset Sprint cleanup.
+- The source implementation gate is complete for setup, deterministic planning, quiz scoring, adaptive recommendation, local persistence, and reset behavior.
+- `npm.cmd run check` and `node --check scripts/smoke.mjs` pass.
+- Runtime execution remains open only because the Chromium binary is unavailable and the named public URL still serves the old shell.
+
 ## Evidence still required
 
 - [ ] Screenshot of the native.builder project workspace.
