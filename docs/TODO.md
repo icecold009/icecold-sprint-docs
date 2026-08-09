@@ -3,6 +3,8 @@
 Last reviewed: **2026-08-09**
 Current release state: **functional local source and Builder preview; published URL still serves the old shell; not submission-ready**
 
+P0 release status: **source gate complete; 2/8 top-level release items complete**. The remaining items are deadline confirmation, Builder sync, public workflow serving, fresh-browser execution, and end-to-end public verification.
+
 This is the execution checklist for completing IceCold Sprint in the native.builder project. The application source is generated and deployed through native.builder; this repository records the plan, decisions, verification results, and submission evidence.
 
 ## Local source checkpoint - 2026-08-09
